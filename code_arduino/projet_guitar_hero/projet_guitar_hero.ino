@@ -45,7 +45,7 @@ void gameEndPrint( char * szText ) {
   lcd.clear();
   // We center the text
   lcd.setCursor(MAX_SLOTS-strlen(szText)-(strlen(szText)/2), 0);
-  lcd.print("GAME OVER");
+  lcd.print(szText);
   lcd.setCursor(MAX_SLOTS/2 - 1,1);
   lcd.print(pGame->getScore());
 }
@@ -65,7 +65,21 @@ void loop()
   if( Serial.available() ) {
     int r = Serial.read();
 
-    Serial.println( r );
+    if( r == 0 ) {
+        if( bGameOver == false && pGame->getScore()==0 ) {
+          return;
+        }
+        bGameOver = false;
+        bCanPressValidate = true;
+        lcd.clear();
+        lcd.setRGB(255,255,255);
+        delete pGame;
+        
+        pGame = new CGame( &lcd );
+        pGame->init();
+        return;
+      }
+
     if( bGameOver == false ) {
        if( r == 1 ) {
         pGame->addTriangle(COLUMN_LEFT);
@@ -78,11 +92,6 @@ void loop()
         bGameOver = true;
         gameEndPrint( "GAME WON !" );
         lcd.setRGB(0,255,0);
-      }
-    } else {
-      if( r == 0 ) {
-        bGameOver = false;
-        pGame->init();
       }
     }
 
@@ -104,6 +113,7 @@ void loop()
 
   // If frameUpdate returns true it means GAME OVER.
   if( pGame->frameUpdate() == true ) {
+    Serial.write(5);
     bGameOver = true;
     gameEndPrint( "GAME OVER" );
     lcd.setRGB(255,0,0);
