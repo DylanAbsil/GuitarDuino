@@ -37,7 +37,7 @@ void setup()
   pGame->init();
 }
 
-void gameEndPrint( char * szText ) {
+void gameEndPrint( char * szText, int code ) {
   if( strlen( szText ) > MAX_SLOTS ) {
     return;
   }
@@ -48,6 +48,10 @@ void gameEndPrint( char * szText ) {
   lcd.print(szText);
   lcd.setCursor(MAX_SLOTS/2 - 1,1);
   lcd.print(pGame->getScore());
+
+  char scoreToSend[16];
+  sprintf(scoreToSend, "%d%d", code, pGame->getScore());
+  Serial.print(scoreToSend);
 }
 
 void loop()
@@ -61,24 +65,11 @@ void loop()
       2 : Add Triangle on right column
       3 : Add Triangle on both columns
       4 : Song is finished, show a "WIN" + Score
+      5 : Game over, we send to the MAC OS X that we lost
+      6 : Game won, we send to the MAC OS X that we won
   */
   if( Serial.available() ) {
     int r = Serial.read();
-
-    if( r == 0 ) {
-        if( bGameOver == false && pGame->getScore()==0 ) {
-          return;
-        }
-        bGameOver = false;
-        bCanPressValidate = true;
-        lcd.clear();
-        lcd.setRGB(255,255,255);
-        delete pGame;
-        
-        pGame = new CGame( &lcd );
-        pGame->init();
-        return;
-      }
 
     if( bGameOver == false ) {
        if( r == 1 ) {
@@ -90,9 +81,11 @@ void loop()
         pGame->addTriangle(COLUMN_RIGHT);
       } else if( r == 4 ) {
         bGameOver = true;
-        gameEndPrint( "GAME WON !" );
+        gameEndPrint( "GAME WON !", 6 );
         lcd.setRGB(0,255,0);
       }
+    } else {
+      
     }
 
     Serial.flush();
@@ -113,9 +106,8 @@ void loop()
 
   // If frameUpdate returns true it means GAME OVER.
   if( pGame->frameUpdate() == true ) {
-    Serial.write(5);
     bGameOver = true;
-    gameEndPrint( "GAME OVER" );
+    gameEndPrint( "GAME OVER", 5 );
     lcd.setRGB(255,0,0);
   }
 }

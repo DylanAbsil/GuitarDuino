@@ -4,6 +4,7 @@
 // Constructor, we need the addr of the LCD object to print triangles & lines.
 CGame::CGame( rgb_lcd * lcd ) {
   this->lcd = lcd;
+  init( );
 }
 
 // CGame::init is called when you need to init or restart the game
