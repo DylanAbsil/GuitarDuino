@@ -26,8 +26,8 @@ GuitarHero for Arduino Leonardo
 `$ cd code_swift/`
 `$ pod init`
 
-## Who to launch the game
-- Plug the arduino in your Mac os x
+## How to launch the game
+- Plug the arduino to your Mac os x
 - Send Arduino code in your Arduino
 - In your terminal :
 `$ open ./code_swift/guitarHeroArduino.xcworkspace`
