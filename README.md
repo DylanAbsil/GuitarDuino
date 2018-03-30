@@ -8,6 +8,7 @@ GuitarHero for Arduino Leonardo
 - 1 LCD screen
 
 ## Circuit Diagram
+![alt text](img/schemaArduino.png)
 
 ## Library
 - For Mac os x application :
@@ -31,6 +32,7 @@ GuitarHero for Arduino Leonardo
 - In your terminal :
 `$ open ./code_swift/guitarHeroArduino.xcworkspace`
 - Run project
+![alt text](img/swiftApp.jpeg)
 - Start a game
 
 ## Rules
