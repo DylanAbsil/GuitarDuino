@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45552316206B8F80005F8049 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45552315206B8F80005F8049 /* AppDelegate.swift */; };
+		45552318206B8F80005F8049 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45552317206B8F80005F8049 /* ViewController.swift */; };
+		4555231A206B8F80005F8049 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45552319206B8F80005F8049 /* Assets.xcassets */; };
+		4555231D206B8F80005F8049 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4555231B206B8F80005F8049 /* Main.storyboard */; };
+		45B81909206BA16E00EDE3D5 /* telethon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45B81908206BA16E00EDE3D5 /* telethon.mp3 */; };
+		9717D14AEE6A90436A42784E /* Pods_guitarHeroArduino.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F444A839470DB04B1D0193EA /* Pods_guitarHeroArduino.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		16EE674A8229F3874C897709 /* Pods-guitarHeroArduino.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-guitarHeroArduino.release.xcconfig"; path = "Pods/Target Support Files/Pods-guitarHeroArduino/Pods-guitarHeroArduino.release.xcconfig"; sourceTree = "<group>"; };
+		1D6E6083CC60BC402428F2FD /* Pods-guitarHeroArduino.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-guitarHeroArduino.debug.xcconfig"; path = "Pods/Target Support Files/Pods-guitarHeroArduino/Pods-guitarHeroArduino.debug.xcconfig"; sourceTree = "<group>"; };
+		45552312206B8F80005F8049 /* guitarHeroArduino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = guitarHeroArduino.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45552315206B8F80005F8049 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		45552317206B8F80005F8049 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		45552319206B8F80005F8049 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4555231C206B8F80005F8049 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4555231E206B8F80005F8049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4555231F206B8F80005F8049 /* guitarHeroArduino.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = guitarHeroArduino.entitlements; sourceTree = "<group>"; };
+		45B81908206BA16E00EDE3D5 /* telethon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = telethon.mp3; path = ../../telethon.mp3; sourceTree = "<group>"; };
+		F444A839470DB04B1D0193EA /* Pods_guitarHeroArduino.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_guitarHeroArduino.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4555230F206B8F80005F8049 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9717D14AEE6A90436A42784E /* Pods_guitarHeroArduino.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45552309206B8F80005F8049 = {
+			isa = PBXGroup;
+			children = (
+				45B81908206BA16E00EDE3D5 /* telethon.mp3 */,
+				45552314206B8F80005F8049 /* guitarHeroArduino */,
+				45552313206B8F80005F8049 /* Products */,
+				AE6802730792A43B8B8A755D /* Pods */,
+				C8566FBEE17B42BD78DF7B7F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		45552313206B8F80005F8049 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45552312206B8F80005F8049 /* guitarHeroArduino.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45552314206B8F80005F8049 /* guitarHeroArduino */ = {
+			isa = PBXGroup;
+			children = (
+				45552315206B8F80005F8049 /* AppDelegate.swift */,
+				45552317206B8F80005F8049 /* ViewController.swift */,
+				45552319206B8F80005F8049 /* Assets.xcassets */,
+				4555231B206B8F80005F8049 /* Main.storyboard */,
+				4555231E206B8F80005F8049 /* Info.plist */,
+				4555231F206B8F80005F8049 /* guitarHeroArduino.entitlements */,
+			);
+			path = guitarHeroArduino;
+			sourceTree = "<group>";
+		};
+		AE6802730792A43B8B8A755D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D6E6083CC60BC402428F2FD /* Pods-guitarHeroArduino.debug.xcconfig */,
+				16EE674A8229F3874C897709 /* Pods-guitarHeroArduino.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C8566FBEE17B42BD78DF7B7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F444A839470DB04B1D0193EA /* Pods_guitarHeroArduino.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45552311206B8F80005F8049 /* guitarHeroArduino */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45552322206B8F80005F8049 /* Build configuration list for PBXNativeTarget "guitarHeroArduino" */;
+			buildPhases = (
+				67C4ADBA7F82FA6C2DB24564 /* [CP] Check Pods Manifest.lock */,
+				4555230E206B8F80005F8049 /* Sources */,
+				4555230F206B8F80005F8049 /* Frameworks */,
+				45552310206B8F80005F8049 /* Resources */,
+				C55948826E2AFD1C1A947014 /* [CP] Embed Pods Frameworks */,
+				A3F283D49A15C5F06B235803 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = guitarHeroArduino;
+			productName = guitarHeroArduino;
+			productReference = 45552312206B8F80005F8049 /* guitarHeroArduino.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4555230A206B8F80005F8049 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Dylan Absil";
+				TargetAttributes = {
+					45552311206B8F80005F8049 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4555230D206B8F80005F8049 /* Build configuration list for PBXProject "guitarHeroArduino" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45552309206B8F80005F8049;
+			productRefGroup = 45552313206B8F80005F8049 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45552311206B8F80005F8049 /* guitarHeroArduino */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45552310206B8F80005F8049 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4555231A206B8F80005F8049 /* Assets.xcassets in Resources */,
+				45B81909206BA16E00EDE3D5 /* telethon.mp3 in Resources */,
+				4555231D206B8F80005F8049 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		67C4ADBA7F82FA6C2DB24564 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-guitarHeroArduino-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3F283D49A15C5F06B235803 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-guitarHeroArduino/Pods-guitarHeroArduino-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C55948826E2AFD1C1A947014 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-guitarHeroArduino/Pods-guitarHeroArduino-frameworks.sh",
+				"${PODS_ROOT}/AudioKit/macOS/AudioKit.framework",
+				"${PODS_ROOT}/AudioKit/macOS/AudioKitUI.framework",
+				"${BUILT_PRODUCTS_DIR}/ORSSerialPort/ORSSerial.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AudioKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AudioKitUI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ORSSerial.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-guitarHeroArduino/Pods-guitarHeroArduino-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4555230E206B8F80005F8049 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45552318206B8F80005F8049 /* ViewController.swift in Sources */,
+				45552316206B8F80005F8049 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4555231B206B8F80005F8049 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4555231C206B8F80005F8049 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45552320206B8F80005F8049 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		45552321206B8F80005F8049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		45552323206B8F80005F8049 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D6E6083CC60BC402428F2FD /* Pods-guitarHeroArduino.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = guitarHeroArduino/guitarHeroArduino.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3A6EC4F6Q7;
+				INFOPLIST_FILE = guitarHeroArduino/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dydy.guitarHeroArduino;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		45552324206B8F80005F8049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16EE674A8229F3874C897709 /* Pods-guitarHeroArduino.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = guitarHeroArduino/guitarHeroArduino.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3A6EC4F6Q7;
+				INFOPLIST_FILE = guitarHeroArduino/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dydy.guitarHeroArduino;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4555230D206B8F80005F8049 /* Build configuration list for PBXProject "guitarHeroArduino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45552320206B8F80005F8049 /* Debug */,
+				45552321206B8F80005F8049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45552322206B8F80005F8049 /* Build configuration list for PBXNativeTarget "guitarHeroArduino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45552323206B8F80005F8049 /* Debug */,
+				45552324206B8F80005F8049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4555230A206B8F80005F8049 /* Project object */;
+}
