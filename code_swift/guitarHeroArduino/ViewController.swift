@@ -17,7 +17,12 @@ class ViewController: NSViewController {
     var tracker: AKFrequencyTracker?
     var gameEndAlreadyTriggered: Bool = false
     
+    @IBOutlet weak var progressBarMusic: NSProgressIndicator!
+    @IBOutlet weak var labelInformation: NSTextField!
+    @IBOutlet weak var difficultyDropDown: NSPopUpButton!
     @IBOutlet weak var musicChosenTextField: NSTextField!
+    @IBOutlet weak var currentLabel: NSTextField!
+    @IBOutlet weak var endLabel: NSTextField!
     
     var com: ORSSerialPort?
     var szAudiofile: String = ""
@@ -25,6 +30,9 @@ class ViewController: NSViewController {
     @IBOutlet weak var playSound: NSButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        difficultyDropDown.removeAllItems()
+        difficultyDropDown.addItems(withTitles: ["Easy", "Ah wé qd mm", "Ah"])
         
         var arduinoCom: String = "/dev/cu."
         
@@ -50,20 +58,22 @@ class ViewController: NSViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func playSoundPressed(_ sender: Any) {
-        gameEndAlreadyTriggered = false;
+        gameEndAlreadyTriggered = false
+        playSound.isEnabled = false
+        self.currentLabel.stringValue = "00:00"
         
         if let c = self.com {
             // init the game
             var data = Data()
             data.append(0);
             c.send(data);
+        }
+        
+        if let a = audioPlayer, let b = laterAudioPlayer {
+            a.stop()
+            b.stop()
             
-            if let a = audioPlayer, let b = laterAudioPlayer {
-                a.stop()
-                b.stop()
-                
-                laterAudioPlayer = nil
-            }
+            laterAudioPlayer = nil
         }
         
         do {
@@ -73,6 +83,14 @@ class ViewController: NSViewController {
             let audio2 = try AKAudioFile(forReading: url)
             audioPlayer = try AKAudioPlayer(file: audio)
             laterAudioPlayer = try AKAudioPlayer(file: audio2)
+            
+            if let duration = laterAudioPlayer?.duration {
+                self.progressBarMusic.maxValue = duration
+                let second = Int(duration.truncatingRemainder(dividingBy: 60.0))
+                let minute = Int(duration/60)
+                
+                self.endLabel.stringValue = "\(minute < 10 ? "0" : "")\(minute):\(second < 10 ? "0" : "")\(second)"
+            }
             
             if let audio = audioPlayer {
                 tracker = AKFrequencyTracker(audio)
@@ -95,7 +113,20 @@ class ViewController: NSViewController {
             print("Error info: \(error)")
         }
         
-        Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true) { (timer) in
+        let index = self.difficultyDropDown.indexOfSelectedItem
+        
+        let time = 0.5 - (index * 0.15)
+        
+        Timer.scheduledTimer(withTimeInterval: time, repeats: true) { (timer) in
+            if let audioLater = self.laterAudioPlayer {
+                let currentTime = audioLater.currentTime
+                self.progressBarMusic.doubleValue = currentTime
+                let second = Int(currentTime.truncatingRemainder(dividingBy: 60.0))
+                let minute = Int(currentTime/60)
+                
+                self.currentLabel.stringValue = "\(minute < 10 ? "0" : "")\(minute):\(second < 10 ? "0" : "")\(second)"
+            }
+            
             if let audio = self.audioPlayer, let t = self.tracker {
                 if( audio.isPlaying == true ) {
                     let amplitude = t.amplitude * 100.0
@@ -137,26 +168,17 @@ class ViewController: NSViewController {
         }
     }
     
-    @IBAction func easyPressed(_ sender: Any) {
-    }
-    
-    @IBAction func mediumPressed(_ sender: Any) {
-    }
-    
-    @IBAction func extremePressed(_ sender: Any) {
-    }
-    
     
     @IBAction func chooseSoundPressed(_ sender: Any) {
-        let dialog = NSOpenPanel();
+        let dialog = NSOpenPanel()
         
-        dialog.title                   = "Choose an audio file";
-        dialog.showsResizeIndicator    = true;
-        dialog.showsHiddenFiles        = false;
-        dialog.canChooseDirectories    = true;
-        dialog.canCreateDirectories    = false;
-        dialog.allowsMultipleSelection = false;
-        dialog.allowedFileTypes        = ["mp3"];
+        dialog.title                   = "Choose an audio file"
+        dialog.showsResizeIndicator    = true
+        dialog.showsHiddenFiles        = false
+        dialog.canChooseDirectories    = true
+        dialog.canCreateDirectories    = false
+        dialog.allowsMultipleSelection = false
+        dialog.allowedFileTypes        = ["mp3"]
         // MP3 ONLY
         
         if (dialog.runModal() == .OK) {
@@ -172,15 +194,30 @@ class ViewController: NSViewController {
 
 extension ViewController: ORSSerialPortDelegate {
     func serialPort(_ serialPort: ORSSerialPort, didReceive data: Data) {
-        var value: UInt8 = 0
-        data.copyBytes(to: &value, count: data.count)
         
-        print( value )
+        guard let dataString = String(data: data, encoding: String.Encoding.utf8) else { return }
         
-        if value == 5 {
+        let index = dataString.index(dataString.startIndex, offsetBy: 1)
+        guard let value = Int(dataString[..<index]) else { return }
+        guard let score = Int(dataString[index...]) else { return }
+        
+        switch value {
+        case 5:
+            playSound.isEnabled = true
+            labelInformation.isHidden = false
+            labelInformation.stringValue = "Game Over \n Score : \(score)"
             audioPlayer?.stop()
             laterAudioPlayer?.stop()
             gameEndAlreadyTriggered = true
+        case 6:
+            playSound.isEnabled = true
+            labelInformation.isHidden = false
+            labelInformation.stringValue = "Game Won \n Score : \(score)"
+            audioPlayer?.stop()
+            laterAudioPlayer?.stop()
+            gameEndAlreadyTriggered = true
+        default:
+            break
         }
     }
     func serialPortWasOpened(_ serialPort: ORSSerialPort) {
