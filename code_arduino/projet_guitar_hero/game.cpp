@@ -170,7 +170,7 @@ bool CGame::frameUpdate( ) {
     iBad = 0;
   }
 
-  int iR = min((4*iBad), 255);
+  int iR = min((6*iBad), 255);
 
   lcd->setRGB(255,255-iR, 255-iR);
 
@@ -178,7 +178,7 @@ bool CGame::frameUpdate( ) {
     return true;
   }
 
-  clearLcd(true);
+  clearLcd(false);
   moveTriangles();
 
   bCanValidate = true;
