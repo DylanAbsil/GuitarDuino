@@ -152,7 +152,7 @@ class ViewController: NSViewController {
                         data.append(value)
                         c.send(data)
                     }
-                } else if( self.gameEndAlreadyTriggered == false ) {
+                } else if( self.laterAudioPlayer != nil && self.laterAudioPlayer!.isPlaying == false && self.gameEndAlreadyTriggered == false ) {
                     self.gameEndAlreadyTriggered = true;
                     
                     if let c = self.com {
@@ -205,14 +205,14 @@ extension ViewController: ORSSerialPortDelegate {
         
         switch value {
         case 5:
-            playSound.isEnabled = true
+            playSound.isEnabled = false
             labelInformation.isHidden = false
             labelInformation.stringValue = "Game Over \n Score : \(score)"
             audioPlayer?.stop()
             laterAudioPlayer?.stop()
             gameEndAlreadyTriggered = true
         case 6:
-            playSound.isEnabled = true
+            playSound.isEnabled = false
             labelInformation.isHidden = false
             labelInformation.stringValue = "Game Won \n Score : \(score)"
             audioPlayer?.stop()

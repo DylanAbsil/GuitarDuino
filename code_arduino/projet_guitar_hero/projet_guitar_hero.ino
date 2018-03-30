@@ -84,8 +84,6 @@ void loop()
         gameEndPrint( "GAME WON !", 6 );
         lcd.setRGB(0,255,0);
       }
-    } else {
-      
     }
 
     Serial.flush();
