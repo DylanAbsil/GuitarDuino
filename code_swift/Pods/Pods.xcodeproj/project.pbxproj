@@ -1,0 +1,846 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BB2761040FDA2A22B0AD774F189D933 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358712E4DFEB97FE69C3C1E2A3E74809 /* Cocoa.framework */; };
+		1FCAA02C586D36F43C759AF49B803AFD /* ORSSerialPort-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D3E05823C83749E39135A04C93445F03 /* ORSSerialPort-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		228F04CDE5ED668998D8727964D0ACF8 /* ORSSerialPacketDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 204934D1461F460FB94F7A2BC5102509 /* ORSSerialPacketDescriptor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		23DB80E13C2F19A18F7F1A4C857D1D85 /* Pods-guitarHeroArduino-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EFBA203F54E19D7E5B770B5F7D78B504 /* Pods-guitarHeroArduino-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D4B8BF0B704641CC1DFCF93E54FC70B /* ORSSerialPort.m in Sources */ = {isa = PBXBuildFile; fileRef = A007E865A6C6D2492E0FF843D8E7332B /* ORSSerialPort.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		550F10EF2C3512148582D7107FE872BB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358712E4DFEB97FE69C3C1E2A3E74809 /* Cocoa.framework */; };
+		55B6D4AF70909662ACE46AB4ED904CB7 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC82BA8319E2BD9B6EC1BB8687DAB2AA /* IOKit.framework */; };
+		74DF89F2A62A4061AFEB891C660EF710 /* ORSSerialRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1233D4D8852A26D98B0C1AE5679AC38E /* ORSSerialRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		904609CF6D2BD5336B0DCD650AC0D5D8 /* ORSSerialPacketDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = D6FA90D19084AB7ED85731D4522C54EC /* ORSSerialPacketDescriptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95EAD4242F6EFBB700C71C497EC4189A /* ORSSerialPort.h in Headers */ = {isa = PBXBuildFile; fileRef = B48D9E8EA5B00B8A5D30DF5EC48E35A7 /* ORSSerialPort.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDE876AA7231ACDE9FB465C2898DAB4A /* ORSSerialBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B7D5AF6882B2E94F3386FF28E565101 /* ORSSerialBuffer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D4C7E65AEEFCC95F8896434061D61171 /* ORSSerialRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 067DA6C28CA446FD7A9ADE4B59DEB65B /* ORSSerialRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6AD3875B77ADDD9DD152C036B7789FB /* ORSSerialPortManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D1EF6A0AE12030AC4A37FA9C25079F33 /* ORSSerialPortManager.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DB69BBCA9AEFE8BF6837F6525183EB81 /* ORSSerialPort-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 725B9A0C98FB2A72023BD016D8874CD8 /* ORSSerialPort-dummy.m */; };
+		DB7FBC051C5FA8725038FAB2C73892BE /* ORSSerialBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = C63BDF7B98292840E8DECC5B6F5FFB96 /* ORSSerialBuffer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F553064C377F0461B7DAD2F39E93B556 /* Pods-guitarHeroArduino-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2207682795D344D47105BF4E59C25115 /* Pods-guitarHeroArduino-dummy.m */; };
+		FBB7FE945D4A9F13BBC954DB832A4500 /* ORSSerialPortManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A06EB3F2F490F928CFBECABCEBD37F48 /* ORSSerialPortManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		309A92EDD597085803FE6254E665F6B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B911FDF074A4916E5501295C4641CCFC;
+			remoteInfo = ORSSerialPort;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04046D3D7CCC590A551193B4384F036F /* AudioKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKitUI.framework; path = macOS/AudioKitUI.framework; sourceTree = "<group>"; };
+		067DA6C28CA446FD7A9ADE4B59DEB65B /* ORSSerialRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORSSerialRequest.h; path = Source/ORSSerialRequest.h; sourceTree = "<group>"; };
+		082FA9F90CE9377FF14FC1DECEB893E1 /* EZAudioFileMarker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFileMarker.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZAudioFileMarker.h; sourceTree = "<group>"; };
+		08716159C25F6590890A20F8482D002A /* AKTesterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKTesterAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKTesterAudioUnit.h; sourceTree = "<group>"; };
+		1233D4D8852A26D98B0C1AE5679AC38E /* ORSSerialRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORSSerialRequest.m; path = Source/ORSSerialRequest.m; sourceTree = "<group>"; };
+		16A1109638465D6B0416204851FBB4D3 /* AKDCBlockAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKDCBlockAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKDCBlockAudioUnit.h; sourceTree = "<group>"; };
+		1861F85D26D66A5364D04B9CDFEC26CD /* EZPlot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZPlot.h; path = macOS/AudioKitUI.framework/Versions/A/Headers/EZPlot.h; sourceTree = "<group>"; };
+		1C6E713E3CD794C1FC5866AF36326332 /* EZMicrophone.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZMicrophone.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZMicrophone.h; sourceTree = "<group>"; };
+		1DEFC508F842C2E5315CFA9B0BC61745 /* AKVocalTractAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKVocalTractAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKVocalTractAudioUnit.h; sourceTree = "<group>"; };
+		1F052877C3ED1EC0C7033B59FB420567 /* AKStringResonatorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKStringResonatorAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKStringResonatorAudioUnit.h; sourceTree = "<group>"; };
+		1F2BC9021F88498995D7CC668B15D198 /* AKTanhDistortionAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKTanhDistortionAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKTanhDistortionAudioUnit.h; sourceTree = "<group>"; };
+		204934D1461F460FB94F7A2BC5102509 /* ORSSerialPacketDescriptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORSSerialPacketDescriptor.m; path = Source/ORSSerialPacketDescriptor.m; sourceTree = "<group>"; };
+		21224A2E80C26C051D94937DA77FBC99 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = macOS/AudioKit.framework; sourceTree = "<group>"; };
+		2207682795D344D47105BF4E59C25115 /* Pods-guitarHeroArduino-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-guitarHeroArduino-dummy.m"; sourceTree = "<group>"; };
+		2278119D716F81D2D8E7FCB8413767DF /* AKHighPassButterworthFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKHighPassButterworthFilterAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKHighPassButterworthFilterAudioUnit.h; sourceTree = "<group>"; };
+		23DFC5C97CD950A37BD5E4B8989D80E3 /* AKCostelloReverbAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKCostelloReverbAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKCostelloReverbAudioUnit.h; sourceTree = "<group>"; };
+		27278B45179AD12BB70A7E52D6E5B761 /* EZAudioFloatData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFloatData.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZAudioFloatData.h; sourceTree = "<group>"; };
+		2940F9313D629978DD08D14FBA12D223 /* Pods-guitarHeroArduino.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-guitarHeroArduino.release.xcconfig"; sourceTree = "<group>"; };
+		2BA37E043E07786CEE58972444CA5B01 /* AKAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKAudioUnit.h; sourceTree = "<group>"; };
+		2BD1B3D3488C3DFA428D78EB5940647B /* AKPhaseDistortionOscillatorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPhaseDistortionOscillatorAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKPhaseDistortionOscillatorAudioUnit.h; sourceTree = "<group>"; };
+		2EC74207651878F65F37B76A441B15AD /* AudioKit-Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AudioKit-Swift.h"; path = "macOS/AudioKit.framework/Versions/A/Headers/AudioKit-Swift.h"; sourceTree = "<group>"; };
+		2EF1B69D7F1EB7AD998D026033B98830 /* AKConvolutionAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKConvolutionAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKConvolutionAudioUnit.h; sourceTree = "<group>"; };
+		308810B764E134E9C5C9E66581F871F0 /* AKFMOscillatorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFMOscillatorAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKFMOscillatorAudioUnit.h; sourceTree = "<group>"; };
+		3127A8ECD3C9D9E639B4DDC6A40B041B /* AKMorphingOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKMorphingOscillatorBankAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKMorphingOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
+		33858D3CD36A1FD9BA50861D6658AF26 /* AKRhinoGuitarProcessorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKRhinoGuitarProcessorAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKRhinoGuitarProcessorAudioUnit.h; sourceTree = "<group>"; };
+		358712E4DFEB97FE69C3C1E2A3E74809 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		35932BD6417D14092D37D7F314D3BE66 /* AudioKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AudioKit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AudioKit.h; sourceTree = "<group>"; };
+		3627F42503C482D5D167F69CCDB116D0 /* AKOperationGeneratorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKOperationGeneratorAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKOperationGeneratorAudioUnit.h; sourceTree = "<group>"; };
+		36C93B0754E4D2B91F9CF7B12E26075F /* EZAudio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudio.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZAudio.h; sourceTree = "<group>"; };
+		37F7E058FD2DADC1B7061C3851CFD9F0 /* Pods-guitarHeroArduino-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-guitarHeroArduino-acknowledgements.plist"; sourceTree = "<group>"; };
+		3B288317163A56B818CA9F258A07B6AC /* AKPluckedStringAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPluckedStringAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKPluckedStringAudioUnit.h; sourceTree = "<group>"; };
+		3E5FC5F94E58A17BFDB467ECDBA2B338 /* EZAudioFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFile.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZAudioFile.h; sourceTree = "<group>"; };
+		3F05AE638C61A94B897A5CD2ED407F22 /* AKFormantFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFormantFilterAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKFormantFilterAudioUnit.h; sourceTree = "<group>"; };
+		411442CC6DE03A8B1C9898FA62FCB5F4 /* AKOfflineRenderAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKOfflineRenderAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKOfflineRenderAudioUnit.h; sourceTree = "<group>"; };
+		431126888B667C76E8C6868BFFBD4FE0 /* AKRolandTB303FilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKRolandTB303FilterAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKRolandTB303FilterAudioUnit.h; sourceTree = "<group>"; };
+		45510DD1A672EF068D45771171A8734A /* EZAudioFFT.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFFT.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZAudioFFT.h; sourceTree = "<group>"; };
+		46A549FE63A4C0AC0C46BF04A95E80F5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FDDBCEBD3E5D3349CB6663E2547E268 /* AKBandRejectButterworthFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKBandRejectButterworthFilterAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKBandRejectButterworthFilterAudioUnit.h; sourceTree = "<group>"; };
+		50A6312A48A833C677B9CCED6A17F551 /* AKPeakingParametricEqualizerFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPeakingParametricEqualizerFilterAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKPeakingParametricEqualizerFilterAudioUnit.h; sourceTree = "<group>"; };
+		516ACF2CE82F4736508691FB465B0757 /* AKResonantFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKResonantFilterAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKResonantFilterAudioUnit.h; sourceTree = "<group>"; };
+		51726C499702D12617655AE81BB0D81C /* AudioKitUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AudioKitUI.h; path = macOS/AudioKitUI.framework/Versions/A/Headers/AudioKitUI.h; sourceTree = "<group>"; };
+		532373948474895B9D107F931F055F10 /* AKPhaserAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPhaserAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKPhaserAudioUnit.h; sourceTree = "<group>"; };
+		53A46901D10BA6E9BBA135560F6D7A3F /* AKFrequencyTrackerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFrequencyTrackerAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKFrequencyTrackerAudioUnit.h; sourceTree = "<group>"; };
+		542FB417ECE208627B229D2A3413F147 /* AKLowPassButterworthFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKLowPassButterworthFilterAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKLowPassButterworthFilterAudioUnit.h; sourceTree = "<group>"; };
+		57D77581B64AC8AD150EA034C7FC59E6 /* AKStereoFieldLimiterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKStereoFieldLimiterAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKStereoFieldLimiterAudioUnit.h; sourceTree = "<group>"; };
+		581BEA693919267BE6B50D7C5A58492F /* EZAudioPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioPlayer.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZAudioPlayer.h; sourceTree = "<group>"; };
+		590FD64DD697F3DBCA678BCF1BB4A80F /* EZOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZOutput.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZOutput.h; sourceTree = "<group>"; };
+		5A1468C4A2F297FECE1B222463431469 /* AKOscillatorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKOscillatorAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKOscillatorAudioUnit.h; sourceTree = "<group>"; };
+		5C3E8BFD39DB81EC09804464132D4E79 /* AKOperationEffectAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKOperationEffectAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKOperationEffectAudioUnit.h; sourceTree = "<group>"; };
+		5CEB4BF737881C83247C2A7AF0D16B68 /* Pods_guitarHeroArduino.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_guitarHeroArduino.framework; path = "Pods-guitarHeroArduino.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D5B1635ABEDDFF14D3B89A2744141E5 /* AKDynamicRangeCompressorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKDynamicRangeCompressorAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKDynamicRangeCompressorAudioUnit.h; sourceTree = "<group>"; };
+		5E7493A595E5372150E6BA18A666C350 /* AKTimelineTap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKTimelineTap.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKTimelineTap.h; sourceTree = "<group>"; };
+		5FE1555AAEE424AAF90634DAF2F1BFF0 /* EZAudioPlot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioPlot.h; path = macOS/AudioKitUI.framework/Versions/A/Headers/EZAudioPlot.h; sourceTree = "<group>"; };
+		63A3205C0F4177A2189865F97D7CF142 /* Pods-guitarHeroArduino.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-guitarHeroArduino.debug.xcconfig"; sourceTree = "<group>"; };
+		674E95D4249DFE1AB9E1A29ECA414A0E /* ORSSerialPort-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ORSSerialPort-prefix.pch"; sourceTree = "<group>"; };
+		6B7D5AF6882B2E94F3386FF28E565101 /* ORSSerialBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORSSerialBuffer.h; path = Source/ORSSerialBuffer.h; sourceTree = "<group>"; };
+		6C617D193F0ED1D399B8DC6943E655EF /* AKEqualizerFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKEqualizerFilterAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKEqualizerFilterAudioUnit.h; sourceTree = "<group>"; };
+		6F1C9EA323D2BEA1421A873A590DF589 /* AKModalResonanceFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKModalResonanceFilterAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKModalResonanceFilterAudioUnit.h; sourceTree = "<group>"; };
+		6FB697DF1856D57ED1495B4C4B837B31 /* AKRhodesPianoAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKRhodesPianoAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKRhodesPianoAudioUnit.h; sourceTree = "<group>"; };
+		719DB3D18A1EEBBBA29F3F683CA7B330 /* AKCombFilterReverbAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKCombFilterReverbAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKCombFilterReverbAudioUnit.h; sourceTree = "<group>"; };
+		725B9A0C98FB2A72023BD016D8874CD8 /* ORSSerialPort-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ORSSerialPort-dummy.m"; sourceTree = "<group>"; };
+		740C0DF6F38339B440C8466EE8CF20EA /* ORSSerialPort.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ORSSerialPort.modulemap; sourceTree = "<group>"; };
+		781033666794729A5EE1714E17528416 /* AKMetalBarAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKMetalBarAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKMetalBarAudioUnit.h; sourceTree = "<group>"; };
+		792EEC1654EFDA4BD9F149BFE01FCB94 /* AKZitaReverbAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKZitaReverbAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKZitaReverbAudioUnit.h; sourceTree = "<group>"; };
+		7A60BA8791A7D0FA5023266D7BE0F48E /* AKLazyTap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKLazyTap.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKLazyTap.h; sourceTree = "<group>"; };
+		7B25892E9E7743715E51134F8B2D8928 /* Pods-guitarHeroArduino-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-guitarHeroArduino-frameworks.sh"; sourceTree = "<group>"; };
+		7B2DD972F0BF413404E06EE31A61982C /* Pods-guitarHeroArduino-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-guitarHeroArduino-resources.sh"; sourceTree = "<group>"; };
+		7D956D4FB005AF051620478989B4D99D /* AKBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKBankAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKBankAudioUnit.h; sourceTree = "<group>"; };
+		8116B7D3F3CB30B477C1556470643127 /* Pods-guitarHeroArduino-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-guitarHeroArduino-acknowledgements.markdown"; sourceTree = "<group>"; };
+		81AB7C4F43A92B2ED2B921ECFB3B48F1 /* AKChowningReverbAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKChowningReverbAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKChowningReverbAudioUnit.h; sourceTree = "<group>"; };
+		82D3B0B321745454D343C5DBD44E06C8 /* AKPWMOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPWMOscillatorBankAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKPWMOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
+		84280B20341E72F6CBB51B7CB6A37573 /* AKTremoloAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKTremoloAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKTremoloAudioUnit.h; sourceTree = "<group>"; };
+		854DF6D7A2589963AC8565F020F98DB4 /* AKLowShelfParametricEqualizerFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKLowShelfParametricEqualizerFilterAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKLowShelfParametricEqualizerFilterAudioUnit.h; sourceTree = "<group>"; };
+		8891CE065609B84B54052DCBB96E351F /* AKDynaRageCompressorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKDynaRageCompressorAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKDynaRageCompressorAudioUnit.h; sourceTree = "<group>"; };
+		89962ED47311EA4ED5770E33079D0758 /* AKAmplitudeEnvelopeAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKAmplitudeEnvelopeAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKAmplitudeEnvelopeAudioUnit.h; sourceTree = "<group>"; };
+		8FA7C2B319FECFE2F751688682C220D0 /* AKMorphingOscillatorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKMorphingOscillatorAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKMorphingOscillatorAudioUnit.h; sourceTree = "<group>"; };
+		91EA5D09C0ECB2E619A74E7A7FB41324 /* AKAmplitudeTrackerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKAmplitudeTrackerAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKAmplitudeTrackerAudioUnit.h; sourceTree = "<group>"; };
+		922F1FDBC1CB8D197CB4093CB45ADEA5 /* AKPresetManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPresetManager.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKPresetManager.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		98418BB8354852F126C2E90B70838B52 /* AKFluteAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFluteAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKFluteAudioUnit.h; sourceTree = "<group>"; };
+		99673FE12CEE880459ECD9A6B27CE572 /* AKOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKOscillatorBankAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
+		9B73CE909F7D233EB7546E200A945F74 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DAEFABB37F5C78CE7D68B636516D670 /* AKBalancerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKBalancerAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKBalancerAudioUnit.h; sourceTree = "<group>"; };
+		A007E865A6C6D2492E0FF843D8E7332B /* ORSSerialPort.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORSSerialPort.m; path = Source/ORSSerialPort.m; sourceTree = "<group>"; };
+		A06EB3F2F490F928CFBECABCEBD37F48 /* ORSSerialPortManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORSSerialPortManager.h; path = Source/ORSSerialPortManager.h; sourceTree = "<group>"; };
+		A15A1BA3C720BD5ABD8AB546D73DFDD2 /* AKBandPassButterworthFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKBandPassButterworthFilterAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKBandPassButterworthFilterAudioUnit.h; sourceTree = "<group>"; };
+		A25C302C6541D93F53CB921CBDB6B810 /* AKBitCrusherAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKBitCrusherAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKBitCrusherAudioUnit.h; sourceTree = "<group>"; };
+		A6B5BA982C19CEDD89405E2416E713C7 /* EZRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRecorder.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZRecorder.h; sourceTree = "<group>"; };
+		A6C214D5A5211E5A3597001A7AA7C315 /* TPCircularBuffer+Unit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TPCircularBuffer+Unit.h"; path = "macOS/AudioKit.framework/Versions/A/Headers/TPCircularBuffer+Unit.h"; sourceTree = "<group>"; };
+		A6F8FA33983DFB6607D6DADA13E28EF4 /* AKDripAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKDripAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKDripAudioUnit.h; sourceTree = "<group>"; };
+		AC38D92F3E27282BDABCAC37B5218056 /* TPCircularBuffer+AudioBufferList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TPCircularBuffer+AudioBufferList.h"; path = "macOS/AudioKit.framework/Versions/A/Headers/TPCircularBuffer+AudioBufferList.h"; sourceTree = "<group>"; };
+		AE002534D56403E82BA0A0C1EDE341E7 /* AKWhiteNoiseAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKWhiteNoiseAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKWhiteNoiseAudioUnit.h; sourceTree = "<group>"; };
+		AE3FA7D87223306536263C3790137D5B /* AKVariableDelayAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKVariableDelayAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKVariableDelayAudioUnit.h; sourceTree = "<group>"; };
+		AE9A11BDF8645ADD0AAE42F4C0C93BE5 /* AKThreePoleLowpassFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKThreePoleLowpassFilterAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKThreePoleLowpassFilterAudioUnit.h; sourceTree = "<group>"; };
+		B1E61D8BA4CEE81EBAD32F771A8B7A2E /* AK4AudioUnitBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AK4AudioUnitBase.h; path = macOS/AudioKit.framework/Versions/A/Headers/AK4AudioUnitBase.h; sourceTree = "<group>"; };
+		B26F51421DBB9428AEFB311590417CEC /* AKBoosterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKBoosterAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKBoosterAudioUnit.h; sourceTree = "<group>"; };
+		B48D9E8EA5B00B8A5D30DF5EC48E35A7 /* ORSSerialPort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORSSerialPort.h; path = Source/ORSSerialPort.h; sourceTree = "<group>"; };
+		B4DE9931073F4EC9E84EC78855F11965 /* ORSSerial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ORSSerial.framework; path = ORSSerialPort.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B66BD7052A7CFF90981D25E22ED45610 /* AKPinkNoiseAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPinkNoiseAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKPinkNoiseAudioUnit.h; sourceTree = "<group>"; };
+		B8284A3C88497E6287ECE14D107FAE7A /* AKClipperAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKClipperAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKClipperAudioUnit.h; sourceTree = "<group>"; };
+		B97B66664160DFD34E51B6A61F155332 /* AKBrownianNoiseAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKBrownianNoiseAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKBrownianNoiseAudioUnit.h; sourceTree = "<group>"; };
+		BC8461CDEB4FA2284C35689241A5889F /* AKRenderTap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKRenderTap.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKRenderTap.h; sourceTree = "<group>"; };
+		BD534C7F9C2720CF704A01A8F9F2195E /* AKHighShelfParametricEqualizerFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKHighShelfParametricEqualizerFilterAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKHighShelfParametricEqualizerFilterAudioUnit.h; sourceTree = "<group>"; };
+		BE8E6B995D44ADA74C5E759C9A446CE4 /* AKPhaseLockedVocoderAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPhaseLockedVocoderAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKPhaseLockedVocoderAudioUnit.h; sourceTree = "<group>"; };
+		C0A5206E686FCA206D061EECBFEC2200 /* AKKorgLowPassFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKKorgLowPassFilterAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKKorgLowPassFilterAudioUnit.h; sourceTree = "<group>"; };
+		C0B7141CD9AC1F279737E7D93FD253DA /* AKShakerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKShakerAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKShakerAudioUnit.h; sourceTree = "<group>"; };
+		C11C3C41D4BC8859CAC6FCEF0D8E428D /* AKPannerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPannerAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKPannerAudioUnit.h; sourceTree = "<group>"; };
+		C25385337450375C2AE4D09CABEAD64C /* AKClarinetAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKClarinetAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKClarinetAudioUnit.h; sourceTree = "<group>"; };
+		C2704756BBE2406CB0487432C93F1313 /* EZAudioDisplayLink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioDisplayLink.h; path = macOS/AudioKitUI.framework/Versions/A/Headers/EZAudioDisplayLink.h; sourceTree = "<group>"; };
+		C63BDF7B98292840E8DECC5B6F5FFB96 /* ORSSerialBuffer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORSSerialBuffer.m; path = Source/ORSSerialBuffer.m; sourceTree = "<group>"; };
+		C8DCEFA954D6E97EEEA3AAC66E03D224 /* AKSporthStack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKSporthStack.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKSporthStack.h; sourceTree = "<group>"; };
+		C9F250FDA79D596D511B8F033216834D /* AKTimeline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKTimeline.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKTimeline.h; sourceTree = "<group>"; };
+		CA075696D03FD75FCF9E1A96EFB56A4D /* AKMoogLadderAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKMoogLadderAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKMoogLadderAudioUnit.h; sourceTree = "<group>"; };
+		CE2753A1299AEC9792967148A374B71C /* EZAudioPlotGL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioPlotGL.h; path = macOS/AudioKitUI.framework/Versions/A/Headers/EZAudioPlotGL.h; sourceTree = "<group>"; };
+		CE6ACF8B83193559EC941D5C255EE980 /* Pods-guitarHeroArduino.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-guitarHeroArduino.modulemap"; sourceTree = "<group>"; };
+		D1EF6A0AE12030AC4A37FA9C25079F33 /* ORSSerialPortManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORSSerialPortManager.m; path = Source/ORSSerialPortManager.m; sourceTree = "<group>"; };
+		D3E05823C83749E39135A04C93445F03 /* ORSSerialPort-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ORSSerialPort-umbrella.h"; sourceTree = "<group>"; };
+		D5683DF507AEB0B3171A5DE7F265821A /* EZAudioUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioUtilities.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZAudioUtilities.h; sourceTree = "<group>"; };
+		D6FA90D19084AB7ED85731D4522C54EC /* ORSSerialPacketDescriptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORSSerialPacketDescriptor.h; path = Source/ORSSerialPacketDescriptor.h; sourceTree = "<group>"; };
+		D718C01D45A8FBA96D5517B7CA73ECF0 /* AKFlatFrequencyResponseReverbAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFlatFrequencyResponseReverbAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKFlatFrequencyResponseReverbAudioUnit.h; sourceTree = "<group>"; };
+		DA712F721AD55B82AE90F049BDF14BA9 /* AKPitchShifterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPitchShifterAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKPitchShifterAudioUnit.h; sourceTree = "<group>"; };
+		DC889BA9582BFFCB0C801F6AAD1F0713 /* AKPWMOscillatorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPWMOscillatorAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKPWMOscillatorAudioUnit.h; sourceTree = "<group>"; };
+		DCF6EF13D6928D2EBF60BD66B49ADE52 /* AKMandolinAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKMandolinAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKMandolinAudioUnit.h; sourceTree = "<group>"; };
+		E090CCD7B23CC0390B8CA465ED76BCCE /* AKMicrophoneTrackerEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKMicrophoneTrackerEngine.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKMicrophoneTrackerEngine.h; sourceTree = "<group>"; };
+		E32DF1EE39699FF3D6CB22E87B1685EE /* AKSamplerMetronome.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKSamplerMetronome.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKSamplerMetronome.h; sourceTree = "<group>"; };
+		E40624F32D6D20FA77E090AF3C842A37 /* ORSSerialPort.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ORSSerialPort.xcconfig; sourceTree = "<group>"; };
+		E6AEBDCB125C231996501F0F03A11CE7 /* AKToneComplementFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKToneComplementFilterAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKToneComplementFilterAudioUnit.h; sourceTree = "<group>"; };
+		EDB5730B928E71EB353460F759E28A71 /* AKTubularBellsAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKTubularBellsAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKTubularBellsAudioUnit.h; sourceTree = "<group>"; };
+		EE10F7E7B6F511E6A08F04AF1C854DB9 /* AudioKitUI-Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AudioKitUI-Swift.h"; path = "macOS/AudioKitUI.framework/Versions/A/Headers/AudioKitUI-Swift.h"; sourceTree = "<group>"; };
+		EE387BEC28726716C9AC0DAD7DB5F759 /* AKFMOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFMOscillatorBankAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKFMOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
+		EFA14396F30BF8D832DA5344E96766A4 /* AKPhaseDistortionOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPhaseDistortionOscillatorBankAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKPhaseDistortionOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
+		EFBA203F54E19D7E5B770B5F7D78B504 /* Pods-guitarHeroArduino-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-guitarHeroArduino-umbrella.h"; sourceTree = "<group>"; };
+		F0AF6F0D9A8BBDFDF4129B437222A4E8 /* TPCircularBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPCircularBuffer.h; path = macOS/AudioKit.framework/Versions/A/Headers/TPCircularBuffer.h; sourceTree = "<group>"; };
+		F8E70C4306E7AFD6746D9E948C80F207 /* EZAudioDevice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioDevice.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZAudioDevice.h; sourceTree = "<group>"; };
+		FA9FCADE4E6950DC6AD951B1428A2589 /* AKToneFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKToneFilterAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKToneFilterAudioUnit.h; sourceTree = "<group>"; };
+		FBACB2F52B6667D73EFF3FA7579C5F3E /* AKSamplePlayerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKSamplePlayerAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKSamplePlayerAudioUnit.h; sourceTree = "<group>"; };
+		FC82BA8319E2BD9B6EC1BB8687DAB2AA /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
+		FEABD8E1762CE27ADBF2D02300ABD51B /* AKAutoWahAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKAutoWahAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKAutoWahAudioUnit.h; sourceTree = "<group>"; };
+		FED716E12866EFF67B5B46B77083856D /* EZAudioFloatConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFloatConverter.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZAudioFloatConverter.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B08105E5A3682F2C71496A6BF30ABBF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BB2761040FDA2A22B0AD774F189D933 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C25C6998AACB93EEB7EA64AE184C2E14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				550F10EF2C3512148582D7107FE872BB /* Cocoa.framework in Frameworks */,
+				55B6D4AF70909662ACE46AB4ED904CB7 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2745630218F89F43C0B3CA73077D4D2E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				46A549FE63A4C0AC0C46BF04A95E80F5 /* Info.plist */,
+				740C0DF6F38339B440C8466EE8CF20EA /* ORSSerialPort.modulemap */,
+				E40624F32D6D20FA77E090AF3C842A37 /* ORSSerialPort.xcconfig */,
+				725B9A0C98FB2A72023BD016D8874CD8 /* ORSSerialPort-dummy.m */,
+				674E95D4249DFE1AB9E1A29ECA414A0E /* ORSSerialPort-prefix.pch */,
+				D3E05823C83749E39135A04C93445F03 /* ORSSerialPort-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ORSSerialPort";
+			sourceTree = "<group>";
+		};
+		2A8E9EED04345BC9846E1DC8CB47D4F6 /* ORSSerialPort */ = {
+			isa = PBXGroup;
+			children = (
+				6B7D5AF6882B2E94F3386FF28E565101 /* ORSSerialBuffer.h */,
+				C63BDF7B98292840E8DECC5B6F5FFB96 /* ORSSerialBuffer.m */,
+				D6FA90D19084AB7ED85731D4522C54EC /* ORSSerialPacketDescriptor.h */,
+				204934D1461F460FB94F7A2BC5102509 /* ORSSerialPacketDescriptor.m */,
+				B48D9E8EA5B00B8A5D30DF5EC48E35A7 /* ORSSerialPort.h */,
+				A007E865A6C6D2492E0FF843D8E7332B /* ORSSerialPort.m */,
+				A06EB3F2F490F928CFBECABCEBD37F48 /* ORSSerialPortManager.h */,
+				D1EF6A0AE12030AC4A37FA9C25079F33 /* ORSSerialPortManager.m */,
+				067DA6C28CA446FD7A9ADE4B59DEB65B /* ORSSerialRequest.h */,
+				1233D4D8852A26D98B0C1AE5679AC38E /* ORSSerialRequest.m */,
+				2745630218F89F43C0B3CA73077D4D2E /* Support Files */,
+			);
+			name = ORSSerialPort;
+			path = ORSSerialPort;
+			sourceTree = "<group>";
+		};
+		30827A9C61735E5EBC6F583795CE737D /* Pods-guitarHeroArduino */ = {
+			isa = PBXGroup;
+			children = (
+				9B73CE909F7D233EB7546E200A945F74 /* Info.plist */,
+				CE6ACF8B83193559EC941D5C255EE980 /* Pods-guitarHeroArduino.modulemap */,
+				8116B7D3F3CB30B477C1556470643127 /* Pods-guitarHeroArduino-acknowledgements.markdown */,
+				37F7E058FD2DADC1B7061C3851CFD9F0 /* Pods-guitarHeroArduino-acknowledgements.plist */,
+				2207682795D344D47105BF4E59C25115 /* Pods-guitarHeroArduino-dummy.m */,
+				7B25892E9E7743715E51134F8B2D8928 /* Pods-guitarHeroArduino-frameworks.sh */,
+				7B2DD972F0BF413404E06EE31A61982C /* Pods-guitarHeroArduino-resources.sh */,
+				EFBA203F54E19D7E5B770B5F7D78B504 /* Pods-guitarHeroArduino-umbrella.h */,
+				63A3205C0F4177A2189865F97D7CF142 /* Pods-guitarHeroArduino.debug.xcconfig */,
+				2940F9313D629978DD08D14FBA12D223 /* Pods-guitarHeroArduino.release.xcconfig */,
+			);
+			name = "Pods-guitarHeroArduino";
+			path = "Target Support Files/Pods-guitarHeroArduino";
+			sourceTree = "<group>";
+		};
+		57AC476751270956328411F27AD0B84B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				51726C499702D12617655AE81BB0D81C /* AudioKitUI.h */,
+				EE10F7E7B6F511E6A08F04AF1C854DB9 /* AudioKitUI-Swift.h */,
+				C2704756BBE2406CB0487432C93F1313 /* EZAudioDisplayLink.h */,
+				5FE1555AAEE424AAF90634DAF2F1BFF0 /* EZAudioPlot.h */,
+				CE2753A1299AEC9792967148A374B71C /* EZAudioPlotGL.h */,
+				1861F85D26D66A5364D04B9CDFEC26CD /* EZPlot.h */,
+				89DDC55CF6F21CE948CC106A2963DAAA /* Frameworks */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		731A33E2A6BE8EA1F1B252120681EEAE /* AudioKit */ = {
+			isa = PBXGroup;
+			children = (
+				B1E61D8BA4CEE81EBAD32F771A8B7A2E /* AK4AudioUnitBase.h */,
+				89962ED47311EA4ED5770E33079D0758 /* AKAmplitudeEnvelopeAudioUnit.h */,
+				91EA5D09C0ECB2E619A74E7A7FB41324 /* AKAmplitudeTrackerAudioUnit.h */,
+				2BA37E043E07786CEE58972444CA5B01 /* AKAudioUnit.h */,
+				FEABD8E1762CE27ADBF2D02300ABD51B /* AKAutoWahAudioUnit.h */,
+				9DAEFABB37F5C78CE7D68B636516D670 /* AKBalancerAudioUnit.h */,
+				A15A1BA3C720BD5ABD8AB546D73DFDD2 /* AKBandPassButterworthFilterAudioUnit.h */,
+				4FDDBCEBD3E5D3349CB6663E2547E268 /* AKBandRejectButterworthFilterAudioUnit.h */,
+				7D956D4FB005AF051620478989B4D99D /* AKBankAudioUnit.h */,
+				A25C302C6541D93F53CB921CBDB6B810 /* AKBitCrusherAudioUnit.h */,
+				B26F51421DBB9428AEFB311590417CEC /* AKBoosterAudioUnit.h */,
+				B97B66664160DFD34E51B6A61F155332 /* AKBrownianNoiseAudioUnit.h */,
+				81AB7C4F43A92B2ED2B921ECFB3B48F1 /* AKChowningReverbAudioUnit.h */,
+				C25385337450375C2AE4D09CABEAD64C /* AKClarinetAudioUnit.h */,
+				B8284A3C88497E6287ECE14D107FAE7A /* AKClipperAudioUnit.h */,
+				719DB3D18A1EEBBBA29F3F683CA7B330 /* AKCombFilterReverbAudioUnit.h */,
+				2EF1B69D7F1EB7AD998D026033B98830 /* AKConvolutionAudioUnit.h */,
+				23DFC5C97CD950A37BD5E4B8989D80E3 /* AKCostelloReverbAudioUnit.h */,
+				16A1109638465D6B0416204851FBB4D3 /* AKDCBlockAudioUnit.h */,
+				A6F8FA33983DFB6607D6DADA13E28EF4 /* AKDripAudioUnit.h */,
+				5D5B1635ABEDDFF14D3B89A2744141E5 /* AKDynamicRangeCompressorAudioUnit.h */,
+				8891CE065609B84B54052DCBB96E351F /* AKDynaRageCompressorAudioUnit.h */,
+				6C617D193F0ED1D399B8DC6943E655EF /* AKEqualizerFilterAudioUnit.h */,
+				D718C01D45A8FBA96D5517B7CA73ECF0 /* AKFlatFrequencyResponseReverbAudioUnit.h */,
+				98418BB8354852F126C2E90B70838B52 /* AKFluteAudioUnit.h */,
+				308810B764E134E9C5C9E66581F871F0 /* AKFMOscillatorAudioUnit.h */,
+				EE387BEC28726716C9AC0DAD7DB5F759 /* AKFMOscillatorBankAudioUnit.h */,
+				3F05AE638C61A94B897A5CD2ED407F22 /* AKFormantFilterAudioUnit.h */,
+				53A46901D10BA6E9BBA135560F6D7A3F /* AKFrequencyTrackerAudioUnit.h */,
+				2278119D716F81D2D8E7FCB8413767DF /* AKHighPassButterworthFilterAudioUnit.h */,
+				BD534C7F9C2720CF704A01A8F9F2195E /* AKHighShelfParametricEqualizerFilterAudioUnit.h */,
+				C0A5206E686FCA206D061EECBFEC2200 /* AKKorgLowPassFilterAudioUnit.h */,
+				7A60BA8791A7D0FA5023266D7BE0F48E /* AKLazyTap.h */,
+				542FB417ECE208627B229D2A3413F147 /* AKLowPassButterworthFilterAudioUnit.h */,
+				854DF6D7A2589963AC8565F020F98DB4 /* AKLowShelfParametricEqualizerFilterAudioUnit.h */,
+				DCF6EF13D6928D2EBF60BD66B49ADE52 /* AKMandolinAudioUnit.h */,
+				781033666794729A5EE1714E17528416 /* AKMetalBarAudioUnit.h */,
+				E090CCD7B23CC0390B8CA465ED76BCCE /* AKMicrophoneTrackerEngine.h */,
+				6F1C9EA323D2BEA1421A873A590DF589 /* AKModalResonanceFilterAudioUnit.h */,
+				CA075696D03FD75FCF9E1A96EFB56A4D /* AKMoogLadderAudioUnit.h */,
+				8FA7C2B319FECFE2F751688682C220D0 /* AKMorphingOscillatorAudioUnit.h */,
+				3127A8ECD3C9D9E639B4DDC6A40B041B /* AKMorphingOscillatorBankAudioUnit.h */,
+				411442CC6DE03A8B1C9898FA62FCB5F4 /* AKOfflineRenderAudioUnit.h */,
+				5C3E8BFD39DB81EC09804464132D4E79 /* AKOperationEffectAudioUnit.h */,
+				3627F42503C482D5D167F69CCDB116D0 /* AKOperationGeneratorAudioUnit.h */,
+				5A1468C4A2F297FECE1B222463431469 /* AKOscillatorAudioUnit.h */,
+				99673FE12CEE880459ECD9A6B27CE572 /* AKOscillatorBankAudioUnit.h */,
+				C11C3C41D4BC8859CAC6FCEF0D8E428D /* AKPannerAudioUnit.h */,
+				50A6312A48A833C677B9CCED6A17F551 /* AKPeakingParametricEqualizerFilterAudioUnit.h */,
+				2BD1B3D3488C3DFA428D78EB5940647B /* AKPhaseDistortionOscillatorAudioUnit.h */,
+				EFA14396F30BF8D832DA5344E96766A4 /* AKPhaseDistortionOscillatorBankAudioUnit.h */,
+				BE8E6B995D44ADA74C5E759C9A446CE4 /* AKPhaseLockedVocoderAudioUnit.h */,
+				532373948474895B9D107F931F055F10 /* AKPhaserAudioUnit.h */,
+				B66BD7052A7CFF90981D25E22ED45610 /* AKPinkNoiseAudioUnit.h */,
+				DA712F721AD55B82AE90F049BDF14BA9 /* AKPitchShifterAudioUnit.h */,
+				3B288317163A56B818CA9F258A07B6AC /* AKPluckedStringAudioUnit.h */,
+				922F1FDBC1CB8D197CB4093CB45ADEA5 /* AKPresetManager.h */,
+				DC889BA9582BFFCB0C801F6AAD1F0713 /* AKPWMOscillatorAudioUnit.h */,
+				82D3B0B321745454D343C5DBD44E06C8 /* AKPWMOscillatorBankAudioUnit.h */,
+				BC8461CDEB4FA2284C35689241A5889F /* AKRenderTap.h */,
+				516ACF2CE82F4736508691FB465B0757 /* AKResonantFilterAudioUnit.h */,
+				33858D3CD36A1FD9BA50861D6658AF26 /* AKRhinoGuitarProcessorAudioUnit.h */,
+				6FB697DF1856D57ED1495B4C4B837B31 /* AKRhodesPianoAudioUnit.h */,
+				431126888B667C76E8C6868BFFBD4FE0 /* AKRolandTB303FilterAudioUnit.h */,
+				FBACB2F52B6667D73EFF3FA7579C5F3E /* AKSamplePlayerAudioUnit.h */,
+				E32DF1EE39699FF3D6CB22E87B1685EE /* AKSamplerMetronome.h */,
+				C0B7141CD9AC1F279737E7D93FD253DA /* AKShakerAudioUnit.h */,
+				C8DCEFA954D6E97EEEA3AAC66E03D224 /* AKSporthStack.h */,
+				57D77581B64AC8AD150EA034C7FC59E6 /* AKStereoFieldLimiterAudioUnit.h */,
+				1F052877C3ED1EC0C7033B59FB420567 /* AKStringResonatorAudioUnit.h */,
+				1F2BC9021F88498995D7CC668B15D198 /* AKTanhDistortionAudioUnit.h */,
+				08716159C25F6590890A20F8482D002A /* AKTesterAudioUnit.h */,
+				AE9A11BDF8645ADD0AAE42F4C0C93BE5 /* AKThreePoleLowpassFilterAudioUnit.h */,
+				C9F250FDA79D596D511B8F033216834D /* AKTimeline.h */,
+				5E7493A595E5372150E6BA18A666C350 /* AKTimelineTap.h */,
+				E6AEBDCB125C231996501F0F03A11CE7 /* AKToneComplementFilterAudioUnit.h */,
+				FA9FCADE4E6950DC6AD951B1428A2589 /* AKToneFilterAudioUnit.h */,
+				84280B20341E72F6CBB51B7CB6A37573 /* AKTremoloAudioUnit.h */,
+				EDB5730B928E71EB353460F759E28A71 /* AKTubularBellsAudioUnit.h */,
+				AE3FA7D87223306536263C3790137D5B /* AKVariableDelayAudioUnit.h */,
+				1DEFC508F842C2E5315CFA9B0BC61745 /* AKVocalTractAudioUnit.h */,
+				AE002534D56403E82BA0A0C1EDE341E7 /* AKWhiteNoiseAudioUnit.h */,
+				792EEC1654EFDA4BD9F149BFE01FCB94 /* AKZitaReverbAudioUnit.h */,
+				35932BD6417D14092D37D7F314D3BE66 /* AudioKit.h */,
+				2EC74207651878F65F37B76A441B15AD /* AudioKit-Swift.h */,
+				36C93B0754E4D2B91F9CF7B12E26075F /* EZAudio.h */,
+				F8E70C4306E7AFD6746D9E948C80F207 /* EZAudioDevice.h */,
+				45510DD1A672EF068D45771171A8734A /* EZAudioFFT.h */,
+				3E5FC5F94E58A17BFDB467ECDBA2B338 /* EZAudioFile.h */,
+				082FA9F90CE9377FF14FC1DECEB893E1 /* EZAudioFileMarker.h */,
+				FED716E12866EFF67B5B46B77083856D /* EZAudioFloatConverter.h */,
+				27278B45179AD12BB70A7E52D6E5B761 /* EZAudioFloatData.h */,
+				581BEA693919267BE6B50D7C5A58492F /* EZAudioPlayer.h */,
+				D5683DF507AEB0B3171A5DE7F265821A /* EZAudioUtilities.h */,
+				1C6E713E3CD794C1FC5866AF36326332 /* EZMicrophone.h */,
+				590FD64DD697F3DBCA678BCF1BB4A80F /* EZOutput.h */,
+				A6B5BA982C19CEDD89405E2416E713C7 /* EZRecorder.h */,
+				F0AF6F0D9A8BBDFDF4129B437222A4E8 /* TPCircularBuffer.h */,
+				AC38D92F3E27282BDABCAC37B5218056 /* TPCircularBuffer+AudioBufferList.h */,
+				A6C214D5A5211E5A3597001A7AA7C315 /* TPCircularBuffer+Unit.h */,
+				F1C1E1BCBFB6AD0D4376FED9DFEAE4C6 /* Frameworks */,
+				57AC476751270956328411F27AD0B84B /* UI */,
+			);
+			name = AudioKit;
+			path = AudioKit;
+			sourceTree = "<group>";
+		};
+		7B6AFBE8D5CCC841FD64324E997BAE6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4DE9931073F4EC9E84EC78855F11965 /* ORSSerial.framework */,
+				5CEB4BF737881C83247C2A7AF0D16B68 /* Pods_guitarHeroArduino.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				D648CE86F139C7CCFD55D5B8A03BE74B /* Frameworks */,
+				8196EAD35CC704E41A7934C8B2CA0B7A /* Pods */,
+				7B6AFBE8D5CCC841FD64324E997BAE6B /* Products */,
+				DCE86C2E99B3B01E10B95BE5235006ED /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8196EAD35CC704E41A7934C8B2CA0B7A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				731A33E2A6BE8EA1F1B252120681EEAE /* AudioKit */,
+				2A8E9EED04345BC9846E1DC8CB47D4F6 /* ORSSerialPort */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		89DDC55CF6F21CE948CC106A2963DAAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04046D3D7CCC590A551193B4384F036F /* AudioKitUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D648CE86F139C7CCFD55D5B8A03BE74B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAE046422CCC4AC8ED4473981183BD6C /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCE86C2E99B3B01E10B95BE5235006ED /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				30827A9C61735E5EBC6F583795CE737D /* Pods-guitarHeroArduino */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F1C1E1BCBFB6AD0D4376FED9DFEAE4C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21224A2E80C26C051D94937DA77FBC99 /* AudioKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAE046422CCC4AC8ED4473981183BD6C /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				358712E4DFEB97FE69C3C1E2A3E74809 /* Cocoa.framework */,
+				FC82BA8319E2BD9B6EC1BB8687DAB2AA /* IOKit.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		595D4F40689C842102BA76F28D8F8DA8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE876AA7231ACDE9FB465C2898DAB4A /* ORSSerialBuffer.h in Headers */,
+				904609CF6D2BD5336B0DCD650AC0D5D8 /* ORSSerialPacketDescriptor.h in Headers */,
+				1FCAA02C586D36F43C759AF49B803AFD /* ORSSerialPort-umbrella.h in Headers */,
+				95EAD4242F6EFBB700C71C497EC4189A /* ORSSerialPort.h in Headers */,
+				FBB7FE945D4A9F13BBC954DB832A4500 /* ORSSerialPortManager.h in Headers */,
+				D4C7E65AEEFCC95F8896434061D61171 /* ORSSerialRequest.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E918B98240846F26375AA2FC35BC6D0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23DB80E13C2F19A18F7F1A4C857D1D85 /* Pods-guitarHeroArduino-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5E243E8263213F33F743BE5CEB4559FD /* Pods-guitarHeroArduino */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CB08B320126F91ED22B276B1342B17F /* Build configuration list for PBXNativeTarget "Pods-guitarHeroArduino" */;
+			buildPhases = (
+				E0B4EAA54008CCEEFCDCF0D8CD41BC43 /* Sources */,
+				B08105E5A3682F2C71496A6BF30ABBF0 /* Frameworks */,
+				9E918B98240846F26375AA2FC35BC6D0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03AAF08DA65D3BC1BC16015104C58BD9 /* PBXTargetDependency */,
+			);
+			name = "Pods-guitarHeroArduino";
+			productName = "Pods-guitarHeroArduino";
+			productReference = 5CEB4BF737881C83247C2A7AF0D16B68 /* Pods_guitarHeroArduino.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B911FDF074A4916E5501295C4641CCFC /* ORSSerialPort */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7470225DF54E5BFED1FD561D2B40C9F6 /* Build configuration list for PBXNativeTarget "ORSSerialPort" */;
+			buildPhases = (
+				6CFDC7E8E871FD3A9CA05DB98BF32F2C /* Sources */,
+				C25C6998AACB93EEB7EA64AE184C2E14 /* Frameworks */,
+				595D4F40689C842102BA76F28D8F8DA8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ORSSerialPort;
+			productName = ORSSerialPort;
+			productReference = B4DE9931073F4EC9E84EC78855F11965 /* ORSSerial.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 7B6AFBE8D5CCC841FD64324E997BAE6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B911FDF074A4916E5501295C4641CCFC /* ORSSerialPort */,
+				5E243E8263213F33F743BE5CEB4559FD /* Pods-guitarHeroArduino */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6CFDC7E8E871FD3A9CA05DB98BF32F2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB7FBC051C5FA8725038FAB2C73892BE /* ORSSerialBuffer.m in Sources */,
+				228F04CDE5ED668998D8727964D0ACF8 /* ORSSerialPacketDescriptor.m in Sources */,
+				DB69BBCA9AEFE8BF6837F6525183EB81 /* ORSSerialPort-dummy.m in Sources */,
+				3D4B8BF0B704641CC1DFCF93E54FC70B /* ORSSerialPort.m in Sources */,
+				D6AD3875B77ADDD9DD152C036B7789FB /* ORSSerialPortManager.m in Sources */,
+				74DF89F2A62A4061AFEB891C660EF710 /* ORSSerialRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0B4EAA54008CCEEFCDCF0D8CD41BC43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F553064C377F0461B7DAD2F39E93B556 /* Pods-guitarHeroArduino-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03AAF08DA65D3BC1BC16015104C58BD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ORSSerialPort;
+			target = B911FDF074A4916E5501295C4641CCFC /* ORSSerialPort */;
+			targetProxy = 309A92EDD597085803FE6254E665F6B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12D31D616BA4B49AEB583A5C2592D066 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E40624F32D6D20FA77E090AF3C842A37 /* ORSSerialPort.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/ORSSerialPort/ORSSerialPort-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ORSSerialPort/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MODULEMAP_FILE = "Target Support Files/ORSSerialPort/ORSSerialPort.modulemap";
+				PRODUCT_NAME = ORSSerial;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BFCA175FC69B6D19AB81FAE6428BA2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2940F9313D629978DD08D14FBA12D223 /* Pods-guitarHeroArduino.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-guitarHeroArduino/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-guitarHeroArduino/Pods-guitarHeroArduino.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_guitarHeroArduino;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		820B7441CE3697AB1D818C816139C42A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E40624F32D6D20FA77E090AF3C842A37 /* ORSSerialPort.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/ORSSerialPort/ORSSerialPort-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ORSSerialPort/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MODULEMAP_FILE = "Target Support Files/ORSSerialPort/ORSSerialPort.modulemap";
+				PRODUCT_NAME = ORSSerial;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B9CE42702BB4CB4CD80AC72AE363B87F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63A3205C0F4177A2189865F97D7CF142 /* Pods-guitarHeroArduino.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-guitarHeroArduino/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-guitarHeroArduino/Pods-guitarHeroArduino.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_guitarHeroArduino;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C4D8B0A6AD4EF0183B7B90C84630289B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		ED3BC417A9BAAB2DFA8DA863F8CA89C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0CB08B320126F91ED22B276B1342B17F /* Build configuration list for PBXNativeTarget "Pods-guitarHeroArduino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9CE42702BB4CB4CD80AC72AE363B87F /* Debug */,
+				4BFCA175FC69B6D19AB81FAE6428BA2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED3BC417A9BAAB2DFA8DA863F8CA89C0 /* Debug */,
+				C4D8B0A6AD4EF0183B7B90C84630289B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7470225DF54E5BFED1FD561D2B40C9F6 /* Build configuration list for PBXNativeTarget "ORSSerialPort" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				820B7441CE3697AB1D818C816139C42A /* Debug */,
+				12D31D616BA4B49AEB583A5C2592D066 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
