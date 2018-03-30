@@ -61,6 +61,8 @@ class ViewController: NSViewController {
         gameEndAlreadyTriggered = false
         playSound.isEnabled = false
         self.currentLabel.stringValue = "00:00"
+        self.labelInformation.isHidden = true
+        self.labelInformation.stringValue = ""
         
         if let c = self.com {
             // init the game
